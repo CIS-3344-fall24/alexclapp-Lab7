@@ -1,0 +1,26 @@
+<script>
+    //const user = { name: "", age: 17, email: "example.com" };
+    //validateDetails(user)
+    //Name is empty.
+    //Age is below 18.
+    //Email is missing or does not contain the “@” symbol.
+
+    function checkFunction(user) {
+        
+        try  {
+        if (user.name == "") throw "empty name";
+
+        if (user.age < 18) throw "too young";
+
+        if (user.email == "" || user.email.includes("W") ) throw "improper email";
+
+        } catch(error) {
+            console.log(error)
+        }
+
+    }
+
+
+
+
+</script>
