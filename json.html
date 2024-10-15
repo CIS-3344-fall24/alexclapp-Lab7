@@ -1,7 +1,7 @@
 <script>
     //calculateTotal(orderJSON)
     
-    const ordersJSON =
+    const ordersStringJSON =
     `[
         {"customer": {
             "name": "Jane Doe", "email": "jane.doe@example.com"},
@@ -22,19 +22,46 @@
     ]`;
 
 
-    function calculateTotal(orderJSON) {
-        const jsonObjectOrders = JSON.parse(ordersJSON);
-
-        var total;
-
-        total = 
-
-            jsonObjectOrders.forEach(customer => {
-                
-            });
-
+    function calculateTotal(orderStringJSON) {
+        const jsonOrders = JSON.parse(ordersStringJSON);
+            let total = 0;
+            console.log( jsonOrders[0][0])
+            for (let i = 0; i < jsonOrders.customer; i++) {
+                jsonOrders.customer.price[i]
+            }
     }
+
+    const jsonOrders = JSON.parse(ordersStringJSON)
+
+    console.log( jsonOrders)
+
+    calculateTotal(ordersStringJSON)
+
 
 
 //JSONObject json = new JSONObject(yourdata); String statistics = json.getString("statistics"); JSONObject name1 = json.getJSONObject("John"); String ageJohn = name1.getString("Age");
 </script>
+
+<table>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td>33</td>
+        <td>33</td>
+      </tr>
+  </table>
+  
